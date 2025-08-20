@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+</head>
+<body>
+    <header>
+        <a href="a" class="logo">Popcorn Hub</a>
+        <ul class="nav">
+            <li><a href="a"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="a">  <i class="fa-solid fa-clapperboard"></i></a></li>
+            <li><a href="a"><i class="fa-solid fa-film"></i></a></li>
+            <li><a href="a">18+</a></li>
+            <li><a href="a">Kids</a></li>
+ 
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search"/>
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+
+   <div class="banner">
+    <div class="content active">
+        <img src="images/movie title mirzapur.jpeg" alt="" class="Movie-title">
+        <h4>
+            <span>2018</span><span><i>18+</i></span>
+            <span>7h 3min</span><span>Thriller</span>
+        </h4>
+        <p>
+           Mirzapur is a gritty Indian crime thriller set in the lawless city 
+           of Mirzapur, ruled by the ruthless Kaleen Bhaiya. Power, greed, 
+           and revenge drive the story as rival gangs clash. Twists, betrayals,
+           and brutal violence make it an intense saga of ambition, family, and survival.
+        </p>
+        <div class="button">
+            <a href="a"><i class="fa-solid fa-play" aria-hidden="true"></i>Watch</a>
+           <a href="a "><i class="fa-solid fa-plus" aria-hidden="true"></i> My List</a>
+        </div>
+    </div>
+    
+    <div class="carousel-box">
+        <div class="carousel">
+            <div class="carousel-item" onclick="changeBg('bg-mirzapur.jpg', 'mirzapur');">
+                <img src="images/mirzapur.jpg" alt="" id="mirzapur">
+            </div>
+            <div class="carousel-item" onclick="changeBg('bg-money-heist.jpg', 'money-heist');">
+                <img src="images/money-heist.jpg" alt="" id="money-heist">
+            </div>
+            <div class="carousel-item" onclick="changeBg('bg-farzi.jpg', 'farzi');">
+                <img src="images/farzi.jpeg" alt="" id="farzi">
+            </div>
+            <div class="carousel-item" onclick="changeBg('bg-got.jpg', 'GOT');">
+                <img id="GOT" src="images/ned-stark-of-game-of-thrones-yny5e9tb3tvw8r3m.jpg" alt="">
+            </div>
+            <div class="carousel-item" onclick="changeBg('bg-phir-hera-pheri.jpg', 'phir hera pheri');">
+                <img src="images/phir hera pheri.jpeg" alt="" id="phir hera pheri">
+            </div>
+        </div>
+    </div>
+    <a href="a" class="play" onclick="toggleVideo();"><i class="fa-solid fa-circle-play" aria-hidden="true"></i>Watch Trailer </a>
+   
+    <ul class="sci">
+        <li><a href="a"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="a"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="a"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
+   </div>
+   <div class="trailer">
+    <video src="images/video.mp4"
+    muted
+    controls="true"
+    autoplay="true"
+    ></video>
+     <img class="close" src="images/cross.png" alt="" onclick="toggleVideo()">
+   </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+    </script>
+</body>
+</html>
